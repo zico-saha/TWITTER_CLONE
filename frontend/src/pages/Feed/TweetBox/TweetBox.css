@@ -1,0 +1,103 @@
+/* Styles for the tweetBox container */
+.tweetBox {
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 20px;
+}
+
+.tweetBoxInput {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tweetBoxInput .Avatar {
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.tweetBoxInput input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+/* Align icons and tweet button properly */
+.FileIconTweetButton {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.imageIcon,
+.videoIcon {
+    cursor: pointer;
+    margin-right: 10px;
+    color: var(--twitter-color);
+}
+
+.imageInput,
+.videoInput {
+    display: none;
+}
+
+/* Align tweet button to the right */
+.tweetButton {
+    background-color: var(--twitter-color) !important;
+    color: white !important;
+    border: none;
+    width: 100px !important;
+    height: 40px !important;
+    border-radius: 20px !important;
+    font-weight: 700 !important;
+    text-transform: inherit !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-left: 500px !important;
+    /* Align button to the right */
+}
+
+.tweetButton:hover {
+    background-color: #1a8cd8;
+}
+
+.tweetButton:disabled:hover {
+    cursor: not-allowed !important;
+}
+
+.uploadingText {
+    color: #657786;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Flex container for icons and button */
+.FileIconTweetButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.iconGroup {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .tweetBoxInput {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .FileIconTweetButton {
+        justify-content: space-between;
+    }
+
+    .tweetButton {
+        width: 100%;
+        text-align: center;
+    }
+}
