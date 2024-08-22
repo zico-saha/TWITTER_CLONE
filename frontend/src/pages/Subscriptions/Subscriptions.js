@@ -110,6 +110,7 @@ const SubscriptionPlans = () => {
                 },
             };
 
+            // eslint-disable-next-line no-undef
             var rzp = new Razorpay(options);
             rzp.open();
             e.preventDefault();
