@@ -127,7 +127,7 @@ const Home = () => {
                 const currentHour = new Date().getHours();
 
                 // If current hour is outside allowed access time (8:00 AM to 6:00 PM), show an alert
-                if (currentHour < 8 || currentHour > 18) {
+                if (currentHour < 8 || currentHour >= 18) {
                     // Set alert message
                     setAlertMessage('Access is restricted outside of 8:00 AM to 6:00 PM. You will be logged out.');
                     // Show the alert
