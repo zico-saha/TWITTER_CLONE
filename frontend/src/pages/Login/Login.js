@@ -146,7 +146,7 @@ const Login = () => {
                 userInfo.os === 'Linux') {
                 const currentHour = new Date().getHours();
 
-                if (currentHour < 8 || currentHour > 18) {
+                if (currentHour < 8 || currentHour >= 18) {
                     showSnackbar("Login/Sign-In through mobile device is only allowed between 8:00 AM and 6:00 PM.", "info");
                     return;
                 } else {
