@@ -1,0 +1,33 @@
+.sidebarOptions {
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.sidebarOptions:hover {
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+
+.sidebarOptions>.MuiSvgIcon-root {
+    padding: 10px 10px;
+}
+
+.sidebarOptions>h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.doneIcon {
+    color: var(--twitter-color);
+}
+
+@media screen and (max-width: 600px) {
+    .sidebarTweet {
+        display: none;
+    }
+}

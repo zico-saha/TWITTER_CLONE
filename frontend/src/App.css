@@ -1,0 +1,70 @@
+/* English(auto) Theme */
+body.en {
+    --twitter-color: #50b7f5;
+    --twitter-background: #e6ecf0;
+}
+
+body.es {
+    --twitter-color: #f54242;
+    --twitter-background: #f5e6e6;
+}
+
+/* Hindi Theme */
+body.hi {
+    --twitter-color: #42f554;
+    --twitter-background: #e6f5e6;
+}
+
+/* Portuguese Theme */
+body.pt {
+    --twitter-color: #4257f5;
+    --twitter-background: #e6e6f5;
+}
+
+/* Tamil Theme */
+body.ta {
+    --twitter-color: #f5a442;
+    --twitter-background: #f5f0e6;
+}
+
+/* Bengali Theme */
+body.bn {
+    --twitter-color: #f542a1;
+    --twitter-background: #f5e6f0;
+}
+
+/* French Theme */
+body.fr {
+    --twitter-color: #42f5c5;
+    --twitter-background: #e6f5f0;
+}
+
+.homePage {
+    display: flex;
+    height: 100vh;
+    max-width: 100vw;
+    padding: 0 10px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.homepage__sidebar {
+    /* 25% of the width */
+    flex: 0.25;
+}
+
+.homepage__outlet {
+    /* 50% of the width */
+    flex: 0.5;
+}
+
+.homepage__widgets {
+    /* 25% of the width */
+    flex: 0.25;
+}
+
+@media screen and (max-width: 688px) {
+    .homePage {
+        display: block;
+    }
+}
