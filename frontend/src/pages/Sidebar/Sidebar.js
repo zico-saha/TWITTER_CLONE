@@ -80,7 +80,8 @@ const Sidebar = ({ handleLogout, user }) => {
     // Send OTP to the user's email
     const sendOtp = async () => {
         try {
-            setIsLanguageMenuOpen(true);
+            setIsLanguageMenuOpen(false);
+            handleClose();
             setIsOtpDialogOpen(true);
             const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/otp`, { email: loggedInUser[0].email });
             const { otp } = response.data;
